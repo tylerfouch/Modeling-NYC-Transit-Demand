@@ -48,7 +48,8 @@ the data `predict.py` uses. Modify this table to predict ridership for
 stations/locations of your own choosing. To do so, you must include a name
 for the station, its latitude and longitude coordinates, the lines that serve
 the station, whether it's a terminus station, whether it's a commuter station,
-and whether it's a transfer station.
+and whether it's a transfer station. A new table with the predicted ridership
+will be saved to `saved_ridership.csv`.
 
 
 Methods: SQL, regression models, ACS data, visualization
