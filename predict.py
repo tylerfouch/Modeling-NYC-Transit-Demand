@@ -79,9 +79,9 @@ def predict_ridership_for_data_frame(test_data, freq):
                        row["Commuter"], row["Transfer"])]
                       })])
 
-# Predict ridership for stations in "TEST.csv"
+# Predict ridership for stations in "sample.csv"
 save_ridership = predict_ridership_for_data_frame(
-    "test_data/TEST.csv", frequencies)
+    "test_data/sample.csv", frequencies)
 
 # Export calculated ridership to CSV
 save_ridership.to_csv("test_data/calculated_ridership.csv")
