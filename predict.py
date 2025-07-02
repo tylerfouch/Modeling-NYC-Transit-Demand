@@ -61,6 +61,7 @@ def predict_ridership_for_data_frame(test_data, freq):
     given_data = pd.read_csv(test_data)
     results = pd.DataFrame({"Station": [], "Ridership": []})
     for i, row in given_data.iterrows():
+        print("-", sep=" ", end="", flush=True)
         routes = row["Lines"].split(",")
         given_data.at[i, "Lines"] = routes
         total_freq = 0
@@ -69,7 +70,7 @@ def predict_ridership_for_data_frame(test_data, freq):
                 if row_k["Service"] == j:
                     total_freq = total_freq + row_k["TPH"]
                 given_data.at[i, "Frequency"] = total_freq
-    return pd.concat(
+        results = pd.concat(
                 [results,
                  pd.DataFrame(
                      {"Station": [row["Stop Name"]],
@@ -77,7 +78,9 @@ def predict_ridership_for_data_frame(test_data, freq):
                       (row["Latitude"], row["Longitude"],
                        total_freq, row["Terminus"],
                        row["Commuter"], row["Transfer"])]
-                      })])
+                      })], ignore_index = True)
+    print("\nFinished")
+    return results
 
 # Predict ridership for stations in "sample.csv"
 save_ridership = predict_ridership_for_data_frame(

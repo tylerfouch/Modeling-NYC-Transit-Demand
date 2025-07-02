@@ -180,5 +180,7 @@ for i, row in data.iterrows():
 # Add column for each point's distance to midtown
 data["DISTANCE"] = distance(data["POINT"], Point((-73.9840, 40.7549)))
 
+print("Finished")
+
 # Export final data to CSV
 data.to_csv("csv_database/data.csv")
