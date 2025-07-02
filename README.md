@@ -43,7 +43,7 @@ You can start from step [] but if you want to start from the beginning:
 2. To run the model and view the model summary, run `regression.py`.
 3. To run the model and generate plots, run `plot.py `.
 4. To predict ridership at given stations/locations, run `predict.py`.
-A sample dataset of stations/locations is provided in `TEST.csv`, which is
+A sample dataset of stations/locations is provided in `sample.csv`, which is
 the data `predict.py` uses. Modify this table to predict ridership for
 stations/locations of your own choosing. To do so, you must include a name
 for the station, its latitude and longitude coordinates, the lines that serve
