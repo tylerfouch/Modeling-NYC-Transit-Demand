@@ -12,7 +12,7 @@ merge = pd.read_csv("csv_database/merge.csv")
 merge_t = pd.read_csv("csv_database/merge_t.csv")
 jobs = pd.read_csv("csv_database/jobs.csv")
 jobs_t = pd.read_csv("csv_database/jobs_t.csv")
-frequencies = pd.read_csv("csv_database/frequencies.csv")
+frequencies = pd.read_csv("frequencies.csv")
 merge["geometry"] = merge["geometry"].apply(wkt.loads)
 merge = gpd.GeoDataFrame(merge, geometry="geometry")
 

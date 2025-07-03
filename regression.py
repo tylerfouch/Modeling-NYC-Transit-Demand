@@ -15,7 +15,7 @@ merge = pd.read_csv("csv_database/merge.csv")
 merge_t = pd.read_csv("csv_database/merge_t.csv")
 jobs = pd.read_csv("csv_database/jobs.csv")
 jobs_t = pd.read_csv("csv_database/jobs_t.csv")
-frequencies = pd.read_csv("csv_database/frequencies.csv")
+frequencies = pd.read_csv("frequencies.csv")
 
 # Merge ridership dataset with block group dataset
 df = data.join(
