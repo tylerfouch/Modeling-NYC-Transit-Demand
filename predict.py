@@ -66,9 +66,13 @@ def predict_ridership_for_data_frame(test_data, freq):
         given_data.at[i, "Lines"] = routes
         total_freq = 0
         for j in routes:
-            for k, row_k in freq.iterrows():
-                if row_k["Service"] == j:
-                    total_freq = total_freq + row_k["TPH"]
+            if j in freq["Service"].values:
+                for k, row_k in freq.iterrows():
+                    if row_k["Service"] == j:
+                        total_freq = total_freq + row_k["TPH"]
+                    given_data.at[i, "Frequency"] = total_freq
+            else:
+                total_freq = total_freq + 10
                 given_data.at[i, "Frequency"] = total_freq
         results = pd.concat(
                 [results,
