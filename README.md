@@ -51,7 +51,9 @@ the station, whether it's a terminus station, whether it's a commuter station,
 and whether it's a transfer station. A new table with the predicted ridership
 will be saved to `calculated_ridership.csv`.
 
-
-Methods: SQL, regression models, ACS data, visualization
-Tools: pandas, matplotlib, seaborn, sqlite3, statsmodels
-How to run: step-by-step usage guide
+## Sources
+1. [MTA 2023 Subway Ridership Data](https://www.mta.info/agency/new-york-city-transit/subway-bus-ridership-2023)
+2. [MTA Subway Stations (NY Open Data)](https://data.ny.gov/Transportation/MTA-Subway-Stations/39hk-dx4f/data_preview)
+3. [American Community Survey 5-Year Data](https://www.census.gov/data/developers/data-sets/acs-5year.html)
+4. [LEHD Origin-Destination Employment Statistics (LODES) Workplace Area Characteristics (WAC) Data](https://lehd.ces.census.gov/data/)
+5. [NYC Subway Frequencies (Gregory Feliu)](https://github.com/gregfeliu/NYC-Subway-Frequencies)
