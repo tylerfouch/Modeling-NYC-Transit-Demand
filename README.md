@@ -41,15 +41,19 @@ Kurtosis:                       3.757   Cond. No.                         492.
 You can start from step [] but if you want to start from the beginning:
 1. Run `datacleaning.py`
 2. To run the model and view the model summary, run `regression.py`.
-3. To run the model and generate plots, run `plot.py `.
+3. To run the model and generate plots, run `plot.py`. You must run
+`regression.py` first in order to generate the plots.
 4. To predict ridership at given stations/locations, run `predict.py`.
 A sample dataset of stations/locations is provided in `sample.csv`, which is
 the data `predict.py` uses. Modify this table to predict ridership for
 stations/locations of your own choosing. To do so, you must include a name
 for the station, its latitude and longitude coordinates, the lines that serve
 the station, whether it's a terminus station, whether it's a commuter station,
-and whether it's a transfer station. A new table with the predicted ridership
-will be saved to `calculated_ridership.csv`.
+and whether it's a transfer station. You can also edit `sample_frequencies.csv`
+to include custom frequency data for any additional lines you include. However,
+this isn't mandatory, and a default value of 10 trains per hour will be
+assigned if you choose to add a new line. A new table with the predicted
+ridership will be saved to `calculated_ridership.csv`.
 
 ## Sources
 1. [MTA 2023 Subway Ridership Data](https://www.mta.info/agency/new-york-city-transit/subway-bus-ridership-2023)
