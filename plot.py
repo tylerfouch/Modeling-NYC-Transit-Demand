@@ -8,8 +8,8 @@ df = pd.read_csv("csv_database/df.csv")
 
 # Fit model
 X = df[
-    ["LOG_B_JOB_DENSITY", "DISTANCE", "TERMINUS", "TOTAL_FREQ", "ADA",
-     "COMMUTER", "FREQ_X_COMMUTER", "B_DENSITY"]
+    ["JOB_DENSITY_BG_LOG", "DISTANCE", "TERMINUS", "TOTAL_FREQUENCY", "ADA",
+     "COMMUTER", "FREQUENCY-COMMUTER_INTERACTION", "DENSITY_BG"]
     ]
 X = sm.add_constant(X)
 y = df["LOG_2023"]
