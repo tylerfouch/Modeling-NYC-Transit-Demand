@@ -4,7 +4,7 @@
 
 This project was created as part of a larger project to devise a plan for much-needed rapid transit (subway/metro) expansion in the NYC metro area. I needed a way to estimate rapid transit ridership at any location within the tri-state area in order to statistically support decisions (such as station locations, route alignments, and proposed service frequencies) within the plan.
 
-I developed a model to do just that, based on realistically available parameters: population density, job density, distance to Midtown Manhattan, the amount of service the station receives or might receive, whether it is a terminus station, whether it's ADA accessible, and whether it's a "commuter" station (a station with a transfer to commuter rail or a bus terminal, for example). In the model, these parameters are represented by `DENSITY_BG`, `JOB_DENSITY_BG_LOG` (log-transformed), `DISTANCE`, `TOTAL_FREQUENCY` `TERMINUS`, `ADA`, and `COMMUTER`, respectively. There is also an additional variable `FREQUENCY-COMMUTER_INTERACTION` that represents the interaction between `TOTAL_FREQUENCY` and `COMMUTER`.
+I developed a model to do just that, based on realistically available parameters: population density, job density, distance to Midtown Manhattan, the amount of service the station receives or might receive, whether it is a terminus station, whether it's ADA accessible, and whether it's a "commuter" station (a station with a transfer to commuter rail or a bus terminal, for example). In the model, these parameters are represented by `DENSITY_BG`, `JOB_DENSITY_BG_LOG` (log-transformed), `DISTANCE`, `TOTAL_FREQUENCY`, `TERMINUS`, `ADA`, and `COMMUTER`, respectively. There is also an additional variable `FREQUENCY-COMMUTER_INTERACTION` that represents the interaction between `TOTAL_FREQUENCY` and `COMMUTER`.
 
 A number of publically-available resources were used in order to complete this project—these can be found below in the Sources section.
 
@@ -67,6 +67,10 @@ assigned if you choose to add a new line. A new table with the predicted
 ridership will be saved to `calculated_ridership.csv`.
 
 ## Documentation and Notes
+`JOB_DENSITY_BG_LOG`: Log-transformed in order to counteract the effect of heavily-skewed job density geographic data.
+
+`TOTAL_FREQUENCY`: Combines average weekday TPH values (sourced from [NYC Subway Frequencies (Gregory Feliu)](https://github.com/gregfeliu/NYC-Subway-Frequencies)) for each service that serves a station.
+
 `COMMUTER`: Possible values are 0 (not a commuter station), 0.5 (minor commuter station), and 1.0 (major commuter station). The reason for the distinction between minor and major is that a station like Atlantic Av-Barclays Center, while still a commuter hub, is nowhere near as significant as Grand Central-42 St and should be reflected as such in the data. Additionally, I assigned the value 0.5 to each 34 St-Penn Station because the commuter hub effect from Penn Station is split between the station on the Broadway–Seventh Avenue Line and the station on the Eighth Avenue Line. For additional stations of your choosing that you'd like to predict, the value for `COMMUTER` can be assigned at your discretion.
 
 `FREQUENCY-COMMUTER_INTERACTION`: I found that the model was overestimating ridership at major commuter hubs, so I introduced an interaction between `TOTAL_FREQUENCY` and `COMMUTER` to counteract this.
