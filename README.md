@@ -22,7 +22,7 @@ A number of publically-available resources were used in order to complete this p
 ### Insights
 - Ridership is highly centralized due to the structure of the system and the city (see: distance variable). Adding service that de-centralizes the system could unlock a new level of ridership
 - Multi-modal/transfer stations are highly-used, suggests that that should be a focus in future plans (e.g. plan feeder buses for stations to draw in ridership and increase catchment area)
-- Land use can make or break ridership at a station, planning for areas surrounding stations and meeting people where they are is important
+- Land use can make or break ridership at a station, so planning for areas surrounding stations and meeting people where they are is important
 
 ### Plots
 ![](plots/linear_plot.png)
@@ -46,6 +46,10 @@ assigned if you choose to add a new line. A new table with the predicted
 ridership will be saved to `calculated_ridership.csv`.
 
 ## Documentation and Notes
+`LOG_2023`: 2023 total ridership for each station. Log-transformed in order to counteract the effect of high-ridership stations skewing the data.
+
+`LOG_2019`: 2019 total ridership for each station. Log-transformed in order to counteract the effect of high-ridership stations skewing the data. Included to provide a pre-pandemic baseline.
+
 `JOB_DENSITY_BG_LOG`: Log-transformed in order to counteract the effect of heavily-skewed job density geographic data.
 
 `TOTAL_FREQUENCY`: Combines average weekday TPH values (sourced from [NYC Subway Frequencies (Gregory Feliu)](https://github.com/gregfeliu/NYC-Subway-Frequencies)) for each service that serves a station. Log-transformed to counteract its skewed distribution towards station hubs with many lines that combine for extremely frequent service.
