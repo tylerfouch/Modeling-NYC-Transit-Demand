@@ -17,7 +17,12 @@ A number of publically-available resources were used in order to complete this p
 - ADA-accessible stations tend to have greater ridership. However, because the MTA has historically focused on important and high-ridership stations for accessibility retrofit projects, there is not strong causality.
 - Terminal stations have ~57.5% greater ridership than equivalent non-terminal stations. These stations are often major multi-modal transfer points, collecting riders from a far greater catchment area than the typical rapid transit station, leading to increased ridership.
 - Commuter-categorized stations see ~30 times greater ridership than equivalent non-commuter stations. These stations, which serve as transfer points between rapid transit and commuter-oriented modes (like the LIRR, Metro-North, and NJ Transit), are regional hubs and act as gateways to New York City and its rapid transit system. They draw in riders from wide swaths of the metropolitan area (and even the country via regional and long-distance Amtrak services), resulting in massive ridership numbers.
-- The effect of population density in the area surrounding a station—while statistically significant—is less substantial than expected.
+- The effect of population density in the area surrounding a station on ridership—while statistically significant—is less substantial than expected.
+
+### Insights
+- Ridership is highly centralized due to the structure of the system and the city (see: distance variable). Adding service that de-centralizes the system could unlock a new level of ridership
+- Multi-modal/transfer stations are highly-used, suggests that that should be a focus in future plans (e.g. plan feeder buses for stations to draw in ridership and increase catchment area)
+- Land use can make or break ridership at a station, planning for areas surrounding stations and meeting people where they are is important
 
 ### Plots
 ![](plots/linear_plot.png)
