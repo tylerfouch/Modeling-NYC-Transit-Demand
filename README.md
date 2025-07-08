@@ -10,13 +10,13 @@ A number of publically-available resources were used in order to complete this p
 
 ## Results
 
-### Insights
-- Increased service frequency is strongly correlated with greater ridership. The regression results indicate that a 1% increase in frequency at a station is associated with a ~0.79% increase in ridership. However, this isn't purely causal. Increasing service to a station will most likely boost ridership due to the convenience factor, but at the same time, a station might be allocated more service because of *other* factors that boost ridership.
+### Findings
+- Increased service frequency is strongly correlated with greater ridership. The regression results indicate that a 1% increase in frequency at a station is associated with a ~0.79% increase in ridership. However, this isn't purely causal. Increasing service to a station will likely boost ridership due to the convenience factor, but at the same time, a station might be allocated more service because of *other* factors that boost ridership.
 - Ridership tapers off sharply as distance from Midtown Manhattan increases.
 - Greater job concentration boosts ridership. The regression results indicate that a 10% increase in job density is associated with a ~1% increase in ridership.
-- ADA-accessible stations tend to have greater ridership. However, because the MTA has historically focused on significant and high-ridership stations for accessibility retrofit projects, there is most likely a weak causal relationship.
-- Terminal stations have ~57.5% greater ridership than equivalent non-terminal stations. These stations are often major multi-modal transfer points and collect riders from a far greater catchment area than the typical rapid transit station, leading to increased ridership.
-- Commuter-categorized stations see ~30x greater ridership than equivalent non-commuter stations. These stations, which serve as transfer points between rapid transit and commuter-oriented modes (like the LIRR, Metro-North, and NJ Transit), are regional hubs and act as gateways to New York City and its rapid transit system. They draw in riders from wide swaths of the metropolitan area, resulting in massive ridership numbers.
+- ADA-accessible stations tend to have greater ridership. However, because the MTA has historically focused on important and high-ridership stations for accessibility retrofit projects, there is not strong causality.
+- Terminal stations have ~57.5% greater ridership than equivalent non-terminal stations. These stations are often major multi-modal transfer points, collecting riders from a far greater catchment area than the typical rapid transit station, leading to increased ridership.
+- Commuter-categorized stations see ~30 times greater ridership than equivalent non-commuter stations. These stations, which serve as transfer points between rapid transit and commuter-oriented modes (like the LIRR, Metro-North, and NJ Transit), are regional hubs and act as gateways to New York City and its rapid transit system. They draw in riders from wide swaths of the metropolitan area (and even the country via regional and long-distance Amtrak services), resulting in massive ridership numbers.
 - The effect of population density in the area surrounding a station—while statistically significant—is less substantial than expected.
 
 ### Plots
