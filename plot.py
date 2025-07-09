@@ -46,8 +46,8 @@ ticks = [1e4, 1e5, 1e6, 1e7, 6e7]
 labels = ["10K", "100K", "1M", "10M", "60M"]
 plt.xticks(ticks, labels)
 plt.yticks(ticks, labels)
-plt.xlabel("Actual Ridership (millions/year)")
-plt.ylabel("Predicted Ridership (millions/year)")
+plt.xlabel("Actual Ridership")
+plt.ylabel("Predicted Ridership")
 plt.title("Predicted vs. Actual Ridership (2023, log scale)")
 plt.grid(True, which = "both", linestyle= "--")
 plt.tight_layout()
