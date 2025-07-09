@@ -24,7 +24,7 @@ A number of publically-available resources were used in order to complete this p
 - High ridership at multi-modal/transfer stations—ones with major transfers to buses, commuter and intercity rail, or other rapid transit lines—suggests that these attributes should be prioritized in future planning. For example:
     - Design new lines in conjunction with feeder bus networks that bring riders to well-integrated transfer points at the lines' stations. This increases the stations' catchment areas, improving overall access.
     - When planning a line’s alignment and station locations, prioritize transfer points where the route intersects with other transit lines, major bus corridors, or key commuter and intercity rail services. This enhances regional connectivity and encourages higher ridership by making transfers easy and efficient.
-- Land use in areas surrounding stations significantly affects ridership. Development that supports transit ridership, like dense housing and commercial spaces, can help maximize use. Zoning policy should enable more people to live and work within easy access to rapid transit.
+- Land use in areas surrounding stations significantly impacts ridership. Development that supports transit ridership, like dense housing and commercial spaces, can help maximize use. Zoning policy should enable more people to live and work within easy access to rapid transit.
 
 ### Plots
 ![](plots/linear_plot.png)
