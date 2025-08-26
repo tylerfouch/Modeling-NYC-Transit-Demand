@@ -31,7 +31,7 @@ A number of publically-available resources were used in order to complete this p
 ![](plots/log_plot.png)
 
 ## Instructions
-1. Run `datacleaning.py`.
+1. Run `data_cleaning.py`.
 2. To run the model and view the model summary, run `regression.py`.
 3. To run the model and generate plots, run `plot.py`. You must run
 `regression.py` first in order to generate the plots.
